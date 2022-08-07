@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+  color: #f2a10a;
+  text-align: center;
+}
 
+body a {
+color: #f2a10a;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #0af2e3;
+  text-align: center;
+  padding: 14px 15px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.topnav a.active {
+  color: #40f20a;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 672px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 672px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive a.split {
+    float: none;
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+.topnav a.split {
+  float: left;
+  color: yellow;
+  font-size:18px;
+}
+</style>
+<script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="jestonjst" data-description="Support me on Buy me a coffee!" data-message="" data-color="#26B0A1" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+<a href="" class="split">Coding School</a>
+  <a href="../index.html">Home</a>
+  <a href="../about.html">About</a>
+  <a href="../community.html">Community</a>
+  <a href="../contact.html">Contact</a>
+  <a href="../copyright.html">Copyright</a>
+  <a href="../donation.html" class="active">Donation</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding:16px;">
+<h1>Donation</h1>
+<p>Coding School is currently financed using donation by our users and sponsorship from other companies. If you like this project and hope that it will continue to the future, please donate to Coding School Team so we could continue to provide services and maintainence to this website.</p>
+<p>Whether $1 or $10, your donation means a lot to us. You could choose the amount to donate to us by donating using our donation platforms. You could donate to us directly using <a href="https://www.buymeacoffee.com/jestonjst">Buy Me A Coffee</a> and <a href="https://ko-fi.com/jsttan">Ko-Fi</a> pages. You could also donate via the widgets in this pages too.</p>
+
+<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="jestonjst" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a drink" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff"></script>
+<br>
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript' >kofiwidget2.init('Support Me on Ko-fi', '#28e078', 'R6R8BLGHG');kofiwidget2.draw();</script> 
+</div>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+  kofiWidgetOverlay.draw('jsttan', {
+    'type': 'floating-chat',
+    'floating-chat.donateButton.text': 'Support me',
+    'floating-chat.donateButton.background-color': '#5cb85c',
+    'floating-chat.donateButton.text-color': '#fff'
+  });
+</script>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
